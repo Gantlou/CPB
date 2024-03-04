@@ -1,4 +1,4 @@
-# Daniel Giganti Dima 2/22/24 AoM Wearables Demo
+# Daniel Giganti Dima 3/3/24 AoM Wearables Demo
 
 # Import stuff
 # include
@@ -24,7 +24,7 @@ buttonState = button.value
 # Setup neopixel
 extNeo = neopixel.NeoPixel(
     board.D10, 1, brightness=0.5
-)  # extNeo is the external neopixels connected to Bluefruit on pin D6
+)  # extNeo is the external neopixels connected to Bluefruit on pin D10
 
 def theaterChase(pixels, color, wait):
     """Sequantially set pixels RGB values equal to color,
@@ -38,7 +38,6 @@ while True:
     print(potvalue)
     count = 0
     if button.value == 1:
-        print("I hate this\n")
         while count <= 5:
             Red = 255
             Green = 0
@@ -47,7 +46,7 @@ while True:
             sleep(0.1)
             theaterChase(extNeo, ((0, Green, Blue)), 0.1)
             count += 1
-    # flash led to tell person to f#ck off
+    # flash led to tell person to go away
     else:
         # business as usual
         # Define when red, green, and yellow/orange are shown on the potentiometer
