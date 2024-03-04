@@ -17,7 +17,7 @@ The Conductive Velcro is configured as an analog input, with one piece of the ve
 
 The reed switch is configured such that one end is receiving 3.3V and the other end is tied to ground via a pull-down resistor. While the magnet in the flag is within close proximity the reed switch acts as a complete wire essentially and completes the circuit the CPB reads this 'high' signal in and does nothing. When the flag is pulled and the magnetic field is no longer acting on the reed switch the circuit is effectively broken sending a 'low' signal to Bluefruit, and ultimately setting off the vibe motor.
 
-### he system has 2 main outputs: the Vibe Motor and Onboard Neopixels.
+### The system has 2 main outputs: the Vibe Motor and Onboard Neopixels.
 
 The vibe motor is an output device. It is connected to pin A3. When the Bluefruit reads in a 'TRUE' value from the reed switch circuit a 'FALSE' will be sent to pin A3. The opposite is also true, A 'FALSE' from the reed switch will result in a 'TRUE' value being sent to the vibe motor (consequently turning it on).
 
