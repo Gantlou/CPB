@@ -20,9 +20,6 @@ onboard = neopixel.NeoPixel(board.D8, 10, brightness=.5)
 velcro_pad = board.A4
 velcro = touchio.TouchIn(velcro_pad)
 
-while True:
-    if(velcro.value == True):
-        onboard.fill((0, 255, 0))  # change onboard neopixels to red color
 
 # setting up vibration board (vibe board) to buzz
 while True:
