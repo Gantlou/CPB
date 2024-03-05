@@ -1,7 +1,7 @@
 ## CPB TA Demo - StudyStatus | Potentiometer, Off-board Lilypad Button, Off-board Neopixel
 
-### Use case: This is a demonstration of a system to display your availability to talk to or help someone when you're preoccupied.
-
+### Use case: 
+This is a demonstration of a system to display your availability to talk to or help someone when you're preoccupied.
 
 ### What it does: 
 
